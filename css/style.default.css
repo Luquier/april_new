@@ -1592,3 +1592,9 @@ h4,
   right: 0;
   left: 0;
 }
+
+body:not(.en) :lang(en),
+body:not(.it) :lang(it),
+body:not(.jp) :lang(jp) {
+  display: none;
+}

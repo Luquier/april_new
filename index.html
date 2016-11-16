@@ -8,6 +8,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
+<html class="en">
 
 <head>
     <meta charset="utf-8">
@@ -49,6 +50,14 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        // Create language switcher instance
+        var lang = new Lang();
+
+        lang.init({
+            defaultLang: 'en'
+        });
+    </script>
 
     <meta property="og:title" content="Landing Page | Landing Page Bootstrap Theme by Bootstrapious.com!">
     <meta property="og:site_name" content="Landing Page | Landing Page Bootstrap Theme by Bootstrapious.com!">
@@ -62,7 +71,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navigation" data-offset="120">
+<body data-spy="scroll" data-target="#navigation" data-offset="120" class="en">
 
 
 
@@ -86,16 +95,20 @@ _________________________________________________________ -->
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand scrollTo" href="#">About</a>
+                    <a class="navbar-brand scrollTo" href="#" lang="en">About</a>
+                    <a class="navbar-brand scrollTo" href="#" lang="jp">私たちについて</a>
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Login</a>
+                        <li><a href="#" lang="en">Login</a><a href="#" lang="jp">ログイン</a>
                         </li>
-                        <li><a href="#">Create account</a>
+                        <li><a href="#" lang="en">Create account</a><a href="#" lang="jp">登録</a>
                         </li>
+
+                        <button onclick="document.body.className='en'">english</button>
+                        <button onclick="document.body.className='jp'">japanese</button>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -116,8 +129,10 @@ _________________________________________________________ -->
                     <div class="col-md-6 col-md-offset-3 bottom-row" data-animate="fadeInUp">
 
                         <h1 data-animate="fadeInDown">April</h1>
-                        <p class="message" data-animate="fadeInUp">
+                        <p class="message" data-animate="fadeInUp" lang="en">
                             Shop with your personal fashion guru</p>
+                        <p class="message" data-animate="fadeInUp" lang="jp">
+                            あなたのパーソナルスタイリストと買い物行きましょう</p>
                     </div>
 
 
@@ -135,9 +150,11 @@ _________________________________________________________ -->
         <div class="container">
             <div class="col-xs-12 col-md-12 center-block">
 
-                <p class="message2" data-animate="fadeInDown">Find your <span style="color: #00a99d;"> personal stylist</span> in a few clicks and get
+                <p class="message2" data-animate="fadeInDown" lang="en">Find your <span style="color: #00a99d;"> personal stylist</span> in a few clicks and get
                     ready to
                     live an amazing shopping experience in your city</p>
+                <p class="message2" data-animate="fadeInDown" lang="jp"> 簡単に <span style="color: #00a99d;"> パーソナルスタイリスト</span>
+                    を探せて、素敵な買い物トリップを過ごしましょう</p>
 
 <!--
                 <p class="lead">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. </p>-->
@@ -159,16 +176,21 @@ _________________________________________________________ -->
 
     <div class="section no-padding" id="section2">
                 <div class="container-fluid">
-                <div class="row">-
+                <div class="row">
                     <!--<div class="col-md-8 col-md-offset-2">-->
                     <div class="col-md-6 somepadding" data-animate="fadeInLeft">
-                        <h3>UNIQUE</h3>
-                        <h3>AFFORDABLE</h3>
-                        <h3>CUSTOMIZED</h3>
-                        <h3>EASY</h3>
-                        <button type="button" class="button1 pure-button">Find your stylist</button>
+                        <h3 lang="en">UNIQUE</h3>
+                        <h3 lang="jp">ユニーク</h3>
+                        <h3 lang="en">AFFORDABLE</h3>
+                        <h3 lang="jp">安い</h3>
+                        <h3 lang="en">CUSTOMIZED</h3>
+                        <h3 lang="jp">個人的</h3>
+                        <h3 lang="en">EASY</h3>
+                        <h3 lang="jp">簡単</h3>
+                        <button type="button" class="button1 pure-button" lang="en">Find your stylist</button>
+                        <button type="button" class="button1 pure-button" lang="jp">スタイリストを探す</button>
                     </div>
-                    <div class="col-md-6 nopadding-sides">
+                    <div class="col-md-6 nopadding-sides hidden-xs">
 
                         <div style="float:right" data-animate="fadeInRight">
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -213,7 +235,7 @@ _________________________________________________________ -->
         <div class="container-fluid">
             <div class="row">
                 <!--<div class="col-md-8 col-md-offset-2">-->
-                <div class="col-md-6 nopadding-sides">
+                <div class="col-md-6 nopadding-sides hidden-xs">
 
 
                         <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-animate="fadeInLeft">
@@ -239,9 +261,12 @@ _________________________________________________________ -->
 
                 </div>
                 <div class="col-md-6 somepadding" data-animate="fadeInRight">
-                    <h4>EARN MONEY BY LIVING YOUR PASSION</h4>
-                    <h4>SHARE YOUR EXPERTISE</h4>
-                    <button type="button" class="button2">Join as a stylist</button>
+                    <h4 lang="en">EARN MONEY BY LIVING YOUR PASSION</h4>
+                    <h4 lang="jp"> 自分の好みでお金を稼ぎましょう</h4>
+                    <h4 lang="en">SHARE YOUR EXPERTISE</h4>
+                    <h4 lang="jp">あなたの専門知識をシェアしましょう</h4>
+                    <button type="button" class="button2" lang="jp">スタイリストとして参加する</button>
+                    <button type="button" class="button2" lang="en">Join as Stylist</button>
                 </div>
 
 
@@ -462,6 +487,7 @@ _________________________________________________________ -->
 <!-- main js file -->
 
 <script src="js/front.js"></script>
+<script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
 
 
 </body>
