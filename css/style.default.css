@@ -447,6 +447,7 @@ FOOTER
   background: #222222;
   font-size: 12px;
   line-height: 50px;
+  padding: 30px;
 }
 #footer p.social {
   text-align: left;
@@ -467,19 +468,19 @@ FOOTER
   transition: all 0.2s ease-out;
 }
 #footer p.social a.facebook {
-  background-color: #4460ae;
+  background-color: #f7786b;
 }
 #footer p.social a.gplus {
-  background-color: #c21f25;
+  background-color: #00a99d;
 }
 #footer p.social a.instagram {
-  background-color: #cd4378;
+  background-color: #00a99d;
 }
 #footer p.social a.twitter {
-  background-color: #00aced;
+  background-color: #f7786b;
 }
 #footer p.social a.email {
-  background-color: #4a7f45;
+  background-color: #00a99d;
 }
 @media (max-width: 767px) {
   #footer p.social {
@@ -1523,7 +1524,7 @@ a.list-group-item.active > .badge,
 
 h3,
 .h3 {
-  font-size: 31px;
+  font-size: 40px;
   color: #f7786b;
   text-align: center;
 
@@ -1563,7 +1564,7 @@ h4,
 
 #section1{
   padding-top:  80px;
-  padding-bottom:  80px;
+  padding-bottom:  10px;
 }
 
 .message2{
@@ -1624,7 +1625,20 @@ body:not(.jp) :lang(jp) {
 
 .icons-peach{
 
+    text-align: center;
+  font-size: 30px;
+}
+
+.bigicon{
+  font-size: 40px;
+  margin-bottom: 20px;
   color: #f7786b;
-  text-align: center;
-  font-size: 20px;
+}
+
+.iconbtn{
+  background-color: #f7786b;
+  padding: 10px 20px 10px;
+  display: table;
+  float: left;
+
 }
