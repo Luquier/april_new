@@ -1621,3 +1621,10 @@ body:not(.jp) :lang(jp) {
   padding:10px 20px 11px;
   border-bottom: 5px;
 }
+
+.icons-peach{
+
+  color: #f7786b;
+  text-align: center;
+  font-size: 20px;
+}
