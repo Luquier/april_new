@@ -20,6 +20,7 @@
 
     <meta name="keywords" content="">
 
+
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap and Font Awesome css -->
@@ -70,8 +71,9 @@
     <meta name="twitter:creator" content="@bootstrapious">
 
 </head>
-
-<body data-spy="scroll" data-target="#navigation" data-offset="120" class="en">
+<!--
+<body data-spy="scroll" data-target="#navigation" data-offset="120" class="en">-->
+<body class="en">
 
 
 
@@ -86,7 +88,8 @@ _________________________________________________________ -->
         <!-- *** NAVBAR ***
         _________________________________________________________ -->
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+        <div id="top">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -95,16 +98,18 @@ _________________________________________________________ -->
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand scrollTo" href="#" lang="en">About</a>
-                    <a class="navbar-brand scrollTo" href="#" lang="jp">私たちについて</a>
+
+                    <img class="center-block img-responsive" src="img/April_small_logo.png">
+                    <!--<a class="navbar-brand scrollTo" href="#" lang="en">April</a>
+                    <a class="navbar-brand scrollTo" href="#" lang="jp">私たちについて</a>-->
                 </div>
 
                 <div class="navbar-collapse collapse" id="navigation">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" lang="en">Login</a><a href="#" lang="jp">ログイン</a>
+                        <li><a id="fakebtn" href="#" lang="en">Get Started</a><a href="#" lang="jp">登録</a>
                         </li>
-                        <li><a href="#" lang="en">Create account</a><a href="#" lang="jp">登録</a>
+                        <li><a href="#" lang="en">Login</a><a href="#" lang="jp">ログイン</a>
                         </li>
                         <li>
                         <a href="#" onclick="document.body.className='en'" lang="jp">english</a></li>
@@ -115,6 +120,7 @@ _________________________________________________________ -->
                 <!--/.nav-collapse -->
 
             </div>
+        </nav>
         </div>
         <!-- /#navbar -->
 
@@ -154,12 +160,13 @@ _________________________________________________________ -->
     <!-- *** SERVICES ***
 _________________________________________________________ -->
     <div class="section" id="section1">
+        <div id="mid"></div>
         <div class="container">
             <div class="col-xs-12 col-md-12 center-block">
 
                 <p class="message2" data-animate="fadeInDown" lang="en">Find your <span style="color: #00a99d;"> personal stylist</span> in a few clicks and get
                     ready to
-                    live an amazing shopping experience in your city</p>
+                    live <br class="visible-md visible-lg"> an amazing shopping experience in your city</p>
                 <p class="message2" data-animate="fadeInDown" lang="jp"> 簡単に <span style="color: #00a99d;"> パーソナルスタイリスト</span>
                     を探せて、素敵な買い物トリップを過ごしましょう</p>
 
@@ -238,7 +245,7 @@ _________________________________________________________ -->
 _________________________________________________________ -->
 
 
-    <div class="section" id="section3">
+    <div class="section text-gray" id="section3">
         <div class="container-fluid">
             <div class="row">
                 <!--<div class="col-md-8 col-md-offset-2">-->
@@ -486,15 +493,46 @@ _________________________________________________________ -->
 <!-- owl carousel -->
 <script src="js/owl.carousel.min.js"></script>
 <!-- carousel -->
-<script src="js/custom.js"></script>
 
 <!-- jQuery scroll to -->
 <script src="js/jquery.scrollTo.min.js"></script>
 
 <!-- main js file -->
 
+
 <script src="js/front.js"></script>
 <script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+
+<script src="js/custom.js"></script>
+<!--<script type="javascript">
+
+    $(document).ready(function(){
+        var scroll_start = 0;
+        var startchange = $('#top');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $(".navbar-default").css('background-color', '#F89D0E');
+                }
+            });
+        }
+    });
+    $(document).ready(function(){
+        var scroll_start = 0;
+        var startchange = $('#mid');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $(".navbar-default").css('background-color', '#1BAEE4');
+                }
+            });
+        }
+    });
+</script>-->
 
 
 </body>

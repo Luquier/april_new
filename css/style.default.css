@@ -27,7 +27,7 @@ NAVBAR
 .navbar ul.nav > li > a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   border-top: solid 3px transparent;
 }
@@ -139,7 +139,7 @@ UNIVERSAL SECTION STYLES
   border-color: #fff;
 }
 .text-gray {
-  background: #f7f7f7;
+  background: #eeeeee;
 }
 @media (max-width: 991px) {
   .text-gray {
@@ -829,32 +829,32 @@ strong {
   }
 }
 .navbar-default {
-  background-color: transparent;
+  /*background-color: white;*/
   border : 0;
 }
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: inherit;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ffffff;
+  color: inherit;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #ffffff;
+  color: inherit;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color: inherit;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: inherit;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
+  color: inherit;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -864,43 +864,43 @@ strong {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ffffff;
+  border-color: #f7786b;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: #f7786b;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #f7786b;
 }
 .navbar-default .navbar-collapse {
-  border-color: #ffffff;
+  border-color: #f7786b;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: transparent;
-  color: #ffffff;
+  color: #000;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
+    color: #000;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffffff;
+    color: #000;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff;
+    color: #000;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ffffff;
+    color: #000;
     background-color: transparent;
   }
 }
@@ -1578,10 +1578,11 @@ h4,
 
 .navbar-default{
 
-  background-color: transparent;
+  background-color: #ffffff;
   border:  0;
-  color: #ffffff;
+  color: #000000;
 }
+
 
 .navbar-position{
   position: absolute;
@@ -1604,9 +1605,19 @@ body:not(.jp) :lang(jp) {
   position: absolute;
   right: 0;
   bottom: 0;
+  top: 78px;
   min-width: 100%;
-  min-height: 100%;
+  max-height: 90%;
   width: auto;
   height: auto;
   z-index: -100;
+}
+
+#fakebtn{
+  color: #FFFFFF !important;
+  background-color: #f7786b;
+  margin-top: 14px;
+  margin-bottom: -10px;
+  padding:10px 20px 11px;
+  border-bottom: 5px;
 }
