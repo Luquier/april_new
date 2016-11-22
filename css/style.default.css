@@ -139,7 +139,7 @@ UNIVERSAL SECTION STYLES
   border-color: #fff;
 }
 .text-gray {
-  background: #eeeeee;
+  background: rgba(247, 238, 232, 0.46);
 }
 @media (max-width: 991px) {
   .text-gray {
@@ -1564,7 +1564,7 @@ h4,
 
 #section1{
   padding-top:  80px;
-  padding-bottom:  10px;
+  padding-bottom:  80px;
 }
 
 .message2{
@@ -1575,6 +1575,7 @@ h4,
 .somepadding{
   padding-top:  50px;
   padding-bottom:  50px;
+  padding-left: 50px;
 }
 
 .navbar-default{
@@ -1626,13 +1627,13 @@ body:not(.jp) :lang(jp) {
 .icons-peach{
 
     text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .bigicon{
   font-size: 40px;
   margin-bottom: 20px;
-  color: #f7786b;
+  color: #00a99d;
 }
 
 .iconbtn{
