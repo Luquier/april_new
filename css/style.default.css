@@ -1562,9 +1562,11 @@ h4,
   text-transform: uppercase;
 }
 
-#section1{
-  padding-top:  80px;
-  padding-bottom:  80px;
+@media (min-width: 900px) {
+  #section1 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .message2{
@@ -1572,10 +1574,17 @@ h4,
   font-size: 22px;
 }
 
+/*
+@media (max-width: 767px) {
+  .navbar ul.nav > li > a:hover {
+    !*border-top: solid 3px transparent;*!
+  }
+}*/
 .somepadding{
   padding-top:  50px;
   padding-bottom:  50px;
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .navbar-default{
@@ -1597,7 +1606,6 @@ h4,
 }
 
 body:not(.en) :lang(en),
-body:not(.it) :lang(it),
 body:not(.jp) :lang(jp) {
   display: none;
 }
